@@ -48,6 +48,9 @@ GAT_edge_classification.py - Contains the Train, test and evaluation classes <br
 EdgeClassificationNetwork.py - Model architecture (GATConv + GAT) <br>
 Wandb.py - For model hyperparameter configuration and Wandb logging specification <br>
 
+Note: <br>
+The archives folder contains a Metal Layer template.
+
 ## Two-class and Three class classification: <br>
 
 (The Two class and three class specifications can be set through the Wandb.py script) <br>
