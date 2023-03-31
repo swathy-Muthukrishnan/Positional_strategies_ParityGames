@@ -31,8 +31,8 @@ The model takes in the graph representation of the parity games as input and is 
   | |-mod_data.pt                    (Graph data set for 2 Class calssiifcation problem) <br>
   |-pg_data_3Class <br>
   | |-mod_data.pt                    (Graph data set for 3 Class calssiifcation problem) <br>
-  |-&lt Weight Files &gt.pth <br>
-  |–&lt ptrediction resuts &gt.csv <br>
+  |-&lt; Weight Files &gt;.pth <br>
+  |–&lt; ptrediction resuts &gt;.csv <br>
 
 # Python Scripts
 
