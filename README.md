@@ -61,17 +61,21 @@ The three class classification model predicts the positional stategies for both 
 # Train Models
 
   Train the model by executing the train function in the GAT_edge_classification.py script with the right configurations and root folder locations.
-  Note : If the data set folder strtcutre is different, then pass the correct argements. <br>
-         If there are not enough prediction rsults from the node classifier model (stage 1), then use the pre_process_train_dataset function from the pre_process_train_dataset.py script to generate more training data.           
-  
+  Note: <br>
+  (1) If the data set folder strtcutre is different, then pass the correct argements. <br>
+  (2) If there are not enough prediction rsults from the node classifier model (stage 1), then use the pre_process_train_dataset function from the pre_process_train_dataset.py script to generate more training data.           
+
+
 # Predict Results
   Predict the results by executing the predict function in the GAT_edge_classification.py script with the right configurations and root folder locations.
-  Note : If the data set folder strtcutre is different, then pass the correct argements
+  Note: <br> 
+  (1) If the data set folder strtcutre is different, then pass the correct argements
   
 # Evaluate 
   
   Evaluate the results by executing the predict function in the GAT_edge_classification.py script with the right configurations and root folder locations.
-  Note : If the data set folder strtcutre is different, then pass the correct argements
+  Note: <br>
+  (1) If the data set folder strtcutre is different, then pass the correct argements
   
 
   
