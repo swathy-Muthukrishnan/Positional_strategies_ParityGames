@@ -5,7 +5,7 @@ The model takes in the graph representation of the parity games as input and is 
 
 # Requirements
 
-Packages: <br>
+## Packages: <br>
 
 torch: 11.0+cu102', <br>
 torch_geometric: 2.1.0, <br>
@@ -38,22 +38,24 @@ GNNPG <br>
 
 pg_parser.py - For parsing the unmodified game file and the solution file <br>
 modified_game_dataset.py - For generating the graph data set <br>
-pre_process_game_data.py - For creating the modified game files for 2 class and 3 class problems with the winning region information from the Node classifier <br>
+pre_process_game_data.py - For creating the modified game files for 2 class and 3 class problems with the winning region information from the Node 
+classifier <br>
 GAT_edge_classification.py - Contains the Train, test and evaluation classes <br>
 EdgeClassificationNetwork.py - Model architecture (GATConv + GAT) <br>
 Wandb.py - For model hyperparameter configuration and Wandb logging specification <br>
 
-Two-class and Three class classification: <br>
+## Two-class and Three class classification: <br>
 
 (The Two class and three class specifications can be set through the Wandb.py script) <br>
 
 The Two class classification model predicts the positional strategies for player 0 <br>
-
+<br>
  Class Labels: <br>
   0 - The edge is not a winning positional strategy for player 0 <br>
   1 - The edge is a winning positional strategy for player 0 <br>
 
 The three-class classification model predicts the positional strategies for both player 0 and player 1 <br>
+ <br>
  Class Labels: <br>
   0 - The edge is not a winning positional strategy for player 0 and player 1 <br>
   1 - The edge is a winning positional strategy for player 0 <br>
@@ -62,7 +64,7 @@ The three-class classification model predicts the positional strategies for both
 # Train Models
 
 Train the model by executing the train function in the GAT_edge_classification.py script with the proper configurations and root folder locations. <br>
-
+<br>
 Note: <br>
  (1) If the data set folder structure differs, pass the correct arguments. 
  (2) If there are not enough prediction results from the node classifier model (stage 1), use the pre_process_train_dataset function from the pre_process_train_dataset.py script to generate more training data.
@@ -70,13 +72,13 @@ Note: <br>
 # Predict Results
 
 Predict the results by executing the predict function in the GAT_edge_classification.py script with the right configurations and root folder locations. 
-
+<br>
 Note: <br>
  (1) If the data set folder structure is different, then pass the correct arguments
 
 # Evaluate
 
 Evaluate the results by executing the predict function in the GAT_edge_classification.py script with the right configurations and root folder locations. 
-
+<br>
 Note: <br>
  (1) If the data set folder structure is different, then pass the correct arguments
