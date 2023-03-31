@@ -1,6 +1,6 @@
 # Positional_strategies_ParityGames
 
-# Pequirements 
+# Requirements 
 
 # Dataset file structture
   
