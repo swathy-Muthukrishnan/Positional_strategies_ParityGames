@@ -38,7 +38,7 @@ The model takes in the graph representation of the parity games as input and is 
 
 pg_parser.py - For parsing the unmodified game file and the solution file <br>
 modified_game_dataset.py - For generating the grpah data set <br> 
-pre_process_game_data.py - For creating the modified games with the winning region information from Node classifier <br>
+pre_process_game_data.py - For creating the modified game files for 2 class and 3 class problems with the winning region information from Node classifier <br>
 GAT_edge_classification.py - Contains the Train, test and evaluation classes <br> 
 EdgeClassificationNetwork.py - Model architecture (GATConv + GAT) <br>
 Wandb.py - For model hyper parameter configuartion and Wandb logging specification <br>
@@ -61,14 +61,16 @@ The three class classification model predicts the positional stategies for both 
 # Train Models
 
   Train the model by executing the train function in the GAT_edge_classification.py script with the right configurations and root folder locations.
+  Note : If the data set folder strtcutre is different, then pass the correct argements
   
 # Predict Results
   Predict the results by executing the predict function in the GAT_edge_classification.py script with the right configurations and root folder locations.
+  Note : If the data set folder strtcutre is different, then pass the correct argements
   
 # Evaluate 
   
   Evaluate the results by executing the predict function in the GAT_edge_classification.py script with the right configurations and root folder locations.
+  Note : If the data set folder strtcutre is different, then pass the correct argements
   
-  
-  
+
   
