@@ -6,10 +6,11 @@ The model takes in the graph representation of the parity games as input and is 
 
 # Requirements 
   Packages: 
-    torch: 11.0+cu102'
-    torch_geometric: 2.1.0
-    torch_scatter: 2.0.9
-    torch_sparse: 0.6.13
+  
+    torch: 11.0+cu102', 
+    torch_geometric: 2.1.0, 
+    torch_scatter: 2.0.9, 
+    torch_sparse: 0.6.13, 
     Wandb (For logging and model specification)
     
 # Dataset file structture
