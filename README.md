@@ -19,18 +19,18 @@ The model takes in the graph representation of the parity games as input and is 
   
   GNNPG <br>
   |-games-small <br>
-  | |- test
-  | |  |-mod_games_test              (Test data i.e modified games for 2 class classification problem) <br>
-  | |  |-Three_class_mod_games_test  (Test data i.e modified games for 3 class classification problem) <br>
-  | |  |-sol_test                    (Solution files for test data) <br>
-  | |- train <br>
-  | |  |-mod_games_train             (Train data i.e modified games for 2 class classification problem) <br>
-  | |  |-Three_class_mod_games_train (Train data i.e modified games for 3 class classification problem) <br>
-  | |  |-sol_train                   (Solution files for train data) <br>
+  |" "|- test
+  |" "|" "|-mod_games_test              (Test data i.e modified games for 2 class classification problem) <br>
+  |" "|" "|-Three_class_mod_games_test  (Test data i.e modified games for 3 class classification problem) <br>
+  |" "|" "|-sol_test                    (Solution files for test data) <br>
+  |" "|- train <br>
+  |" "|" "|-mod_games_train             (Train data i.e modified games for 2 class classification problem) <br>
+  |" "|" "|-Three_class_mod_games_train (Train data i.e modified games for 3 class classification problem) <br>
+  |" "|" "|-sol_train                   (Solution files for train data) <br>
   |-pg_data_2Class <br>
-  | |-mod_data.pt                    (Graph data set for 2 Class calssiifcation problem) <br>
+  |" "|-mod_data.pt                    (Graph data set for 2 Class calssiifcation problem) <br>
   |-pg_data_3Class <br>
-  | |-mod_data.pt                    (Graph data set for 3 Class calssiifcation problem) <br>
+  |" "|-mod_data.pt                    (Graph data set for 3 Class calssiifcation problem) <br>
   |-&lt; Weight Files &gt;.pth <br>
   |–&lt; ptrediction resuts &gt;.csv <br>
 
