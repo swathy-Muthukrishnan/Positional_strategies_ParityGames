@@ -19,7 +19,7 @@ The model takes in the graph representation of the parity games as input and is 
   
   GNNPG <br>
   |-games-small <br>
-  | |- test
+  | |- test <br>
   | | |-mod_games_test              (Test data i.e modified games for 2 class classification problem) <br>
   | | |-Three_class_mod_games_test  (Test data i.e modified games for 3 class classification problem) <br>
   | | |-sol_test                    (Solution files for test data) <br>
