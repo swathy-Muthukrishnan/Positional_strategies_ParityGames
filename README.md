@@ -34,6 +34,10 @@ GNNPG <br>
  |- &lt; Weight Files &gt; .pth <br>
  |– &lt; prediction results &gt;.csv <br>
 
+Note: <br>
+The games-small directory contains the set of unmodified orriginal game files and their solutions.
+
+
 # Python Scripts
 
 pg_parser.py - For parsing the unmodified game file and the solution file <br>
