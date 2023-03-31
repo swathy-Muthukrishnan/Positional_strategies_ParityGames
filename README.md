@@ -7,11 +7,11 @@ The model takes in the graph representation of the parity games as input and is 
 
 Packages: <br>
 
-torch: 11.0+cu102', 
-torch_geometric: 2.1.0, 
-torch_scatter: 2.0.9, 
-torch_sparse: 0.6.13, 
-Wandb (For logging and model specification)
+torch: 11.0+cu102', <br>
+torch_geometric: 2.1.0, <br>
+torch_scatter: 2.0.9, <br>
+torch_sparse: 0.6.13, <br>
+Wandb (For logging and model specification) <br>
 
 # Dataset file structure
 
