@@ -5,7 +5,7 @@ Prior knowledge of the positional strategies for each node in a parity game help
 The model takes in the graph representation of the parity games as input and is a part of a two-stage training to generate positional strategies for Parity Games. In the first stage, the previously developed node classifier Model will be used to compute the winning regions of the Parity Games. In the second stage, the predicted winning areas from the 1st stage will be used to compute the positional strategies for each node in the Game. 
 
 # Requirements 
-  Packages: .<br>
+  Packages: <br>
   
     torch: 11.0+cu102', 
     torch_geometric: 2.1.0, 
@@ -15,47 +15,47 @@ The model takes in the graph representation of the parity games as input and is 
     
 # Dataset file structture
   
-  Recommened File structure to store game data and solution files .<br>
+  Recommened File structure to store game data and solution files <br>
   
-  GNNPG .<br>
-  |-games-small .<br>
+  GNNPG <br>
+  |-games-small <br>
   | |- test
-  | |  |-mod_games_test              (Test data i.e modified games for 2 class classification problem) .<br>
-  | |  |-Three_class_mod_games_test  (Test data i.e modified games for 3 class classification problem) .<br>
-  | |  |-sol_test                    (Solution files for test data) .<br>
-  | |- train .<br>
-  | |  |-mod_games_train             (Train data i.e modified games for 2 class classification problem) .<br>
-  | |  |-Three_class_mod_games_train (Train data i.e modified games for 3 class classification problem) .<br>
-  | |  |-sol_train                   (Solution files for train data) .<br>
-  |-pg_data_2Class .<br>
-  | |-mod_data.pt                    (Graph data set for 2 Class calssiifcation problem) .<br>
-  |-pg_data_3Class .<br>
-  | |-mod_data.pt                    (Graph data set for 3 Class calssiifcation problem) .<br>
-  |-<Weight Files>.pth .<br>
-  |–<Prediction resuts>.csv .<br>
+  | |  |-mod_games_test              (Test data i.e modified games for 2 class classification problem) <br>
+  | |  |-Three_class_mod_games_test  (Test data i.e modified games for 3 class classification problem) <br>
+  | |  |-sol_test                    (Solution files for test data) <br>
+  | |- train <br>
+  | |  |-mod_games_train             (Train data i.e modified games for 2 class classification problem) <br>
+  | |  |-Three_class_mod_games_train (Train data i.e modified games for 3 class classification problem) <br>
+  | |  |-sol_train                   (Solution files for train data) <br>
+  |-pg_data_2Class <br>
+  | |-mod_data.pt                    (Graph data set for 2 Class calssiifcation problem) <br>
+  |-pg_data_3Class <br>
+  | |-mod_data.pt                    (Graph data set for 3 Class calssiifcation problem) <br>
+  |-<Weight Files>.pth <br>
+  |–<Prediction resuts>.csv <br>
 
 # Python Scripts
 
-pg_parser.py - For parsing the unmodified game file and the solution file .<br>
-modified_game_dataset.py - For generating the grpah data set .<br> 
-pre_process_game_data.py - For creating the modified games with the winning region information from Node classifier .<br>
-GAT_edge_classification.py - Contains the Train, test and evaluation classes .<br> 
-EdgeClassificationNetwork.py - Model architecture (GATConv + GAT) .<br>
-Wandb.py - For model hyper parameter configuartion and Wandb logging specification .<br>
+pg_parser.py - For parsing the unmodified game file and the solution file <br>
+modified_game_dataset.py - For generating the grpah data set <br> 
+pre_process_game_data.py - For creating the modified games with the winning region information from Node classifier <br>
+GAT_edge_classification.py - Contains the Train, test and evaluation classes <br> 
+EdgeClassificationNetwork.py - Model architecture (GATConv + GAT) <br>
+Wandb.py - For model hyper parameter configuartion and Wandb logging specification <br>
   
 # Two class and Three class classification 
-  .<br>
-(The Twwo class and three class spcification can be set through the Wandb.py script)  .<br>
-  .<br>
-The Two class classification model predicts the positional startegies for player 0 .<br>
-  .<br>
-    Class Labels: 0 - The edge is not a psoitional winning strategy for player 0 .<br>
-                  1 - The edge is a psoitional winning strategy for player 0 .<br>
-  .<br>
-The three class classification model predicts the positional stategies for both player 0 and player 1 .<br>
-    Class Labels: 0 - The edge is not a psoitional winning strategy for player 0 and player 1 .<br>
-                  1 - The edge is a psoitional winning strategy for player 0 .<br>
-                  2 - The edge is a psoitional winning strategy for player 1  .<br>
+  <br>
+(The Twwo class and three class spcification can be set through the Wandb.py script)  <br>
+  <br>
+The Two class classification model predicts the positional startegies for player 0 <br>
+  <br>
+    Class Labels: 0 - The edge is not a psoitional winning strategy for player 0 <br>
+                  1 - The edge is a psoitional winning strategy for player 0 <br>
+  <br>
+The three class classification model predicts the positional stategies for both player 0 and player 1 <br>
+    Class Labels: 0 - The edge is not a psoitional winning strategy for player 0 and player 1 <br>
+                  1 - The edge is a psoitional winning strategy for player 0 <br>
+                  2 - The edge is a psoitional winning strategy for player 1 <br>
  
    
 # Train Models
