@@ -35,7 +35,7 @@ GNNPG <br>
  |– &lt; prediction results &gt;.csv <br>
 
 Note: <br>
-The games-small directory contains the set of unmodified orriginal game files and their solutions.
+The games-small directory contains the set of unmodified original game files and their solutions.
 
 
 # Python Scripts
